@@ -13,7 +13,7 @@ export const signup = async (userData) => {
 
 export const login = async (userData) => {
     try {
-        const response = await axios.post(`${API_URL}/login`, userData);
+        const response = await axios.post(`login`, userData);
         return response.data; 
     } catch (error) {
         console.error('Error signing up:', error);
